@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:exported="true"
+        android:layout_height="match_parent"
+        tools:context="RegisterActivity"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:inputType="text"
+            android:background="@drawable/bg_et"
+            android:paddingTop="10dp"
+            android:textSize="14dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"/>
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/bg_et"
+            android:paddingTop="10dp"
+            android:textSize="14dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_level_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et"
+            android:hint="level"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14dp" />
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_password_r"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_et"
+            android:hint="Password"
+            android:paddingTop="10dp"
+            android:textSize="14dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_register_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn"
+            android:padding="10dp"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Already have an account ? "/>
+            <TextView
+                android:id="@+id/tv_login_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#FEBD33"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
